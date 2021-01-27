@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>last_todolist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-inner">
+
+            <h1>Todo List</h1>
+            <div class="row justify-content-center my-4">
+                <div class="col-md-3">
+                    <input type="text" class="todo-input text-capitalize" placeholder="Enter Your First Task" />
+                    <input type="hidden" id="saveIndex" class="todo-input text-capitalize" />
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="todo-input1 text-capitalize" placeholder="Enter Your Second Task" />
+                </div>
+                <div class="col-md-3">
+                    <button class="todo-button" id="btnAddtask" type="submit">
+                    SUBMIT TASK</button>
+                    <button class="todo-button" id="btnSavetask" type="submit" style="display: none;">
+                        SAVE TASK</button>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="todo-container">
+                        <!-- <ul class="todo-list text-capitalize"></ul> -->
+                        <table class="table table-striped todo-list" id="addedtasklist">
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-4">
+                    <form>
+                        <div class="select">
+                            <select name="todos" class="filter-todo">
+                            <option value="all">All</option>
+                            <option value="completed">Completed</option>
+                            <option value="uncompleted">Uncompleted</option>
+                        </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="static/js/app.js"></script>
+</body>
+
+</html>
