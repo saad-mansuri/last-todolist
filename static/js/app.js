@@ -125,8 +125,7 @@ btnSavetask.addEventListener("click", function() {
     let saveindex = document.getElementById("saveIndex").value;
     todos[saveindex] = todoInput.value;
     localStorage.setItem("todos", JSON.stringify(todos));
-    saveindex.value = "";
-    // getTodos();
+    todoInput.value = "";
 })
 
 
